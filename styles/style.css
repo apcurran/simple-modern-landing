@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.header-title {
+  margin: 1em;
+  color: #fff;
+}
+.header-list {
+  margin: 2em;
+  display: flex;
+  list-style: none;
+}
+.header-list-item {
+  margin-right: 3em;
+}
+.header-list-link {
+  text-decoration: none;
+}
+
+.figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figure-image {
+  width: 500px;
+}
+
+.left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.left-title {
+  position: relative;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 1.8rem;
+}
+
+.right {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+}
+.right-para {
+  width: 500px;
+  margin: 6em;
+}
+
+/*# sourceMappingURL=style.css.map */
