@@ -104,11 +104,11 @@ html {
 @keyframes fadeInSlide {
     0% {
         opacity: 0;
-        transform: rotate(180deg) translateY(-70%);
+        transform: rotate(180deg) translate3d(0,-70%,0);
     }
     100% {
         opacity: 1;
-        transform: rotate(180deg) translateY(0%);
+        transform: rotate(180deg) translate3d(0,0,0);
     }
 }
 
